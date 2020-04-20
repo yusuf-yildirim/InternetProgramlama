@@ -1,0 +1,28 @@
+
+#SlideShow1 .image {
+    border-width: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.SlideShow1_ShowAnimation {
+    -webkit-animation: animate-fade-in-left 500ms linear 0s 1 normal both;
+    -moz-animation: animate-fade-in-left 500ms linear 0s 1 normal both;
+    animation: animate-fade-in-left 500ms linear 0s 1 normal both;
+}
+
+.SlideShow1_HideAnimation {
+    -webkit-animation: animate-fade-out 500ms linear 0s 1 normal both;
+    -moz-animation: animate-fade-out 500ms linear 0s 1 normal both;
+    animation: animate-fade-out 500ms linear 0s 1 normal both;
+}
+
+
+#bestsellingcont{
+    margin-left: 10%;
+    transition: height 0.9s;
+    display:block;
+    overflow:auto;
+}

@@ -1,0 +1,28 @@
+
+#FlexContainer1
+{
+   display: -webkit-flex;
+   display: flex;
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   z-index: 7777;
+   padding: 100px 10px 10px 10px;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -webkit-justify-content: space-around;
+   justify-content: space-evenly;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+   margin: 0;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   font-size: 0px;
+}

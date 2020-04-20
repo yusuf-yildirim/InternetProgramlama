@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+.search-box{
+    position: absolute;
+    top: 10%;
+    left:80%;
+    transform: translate(-50%,-50%);
+    background:#4D4D4D;
+    height: 60px;
+    border-radius: 40px;
+    padding:10px;
+}
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .searh-btn{
+    background:#FFFFFF;
+}
+.searh-btn{
+    color: #FFBE00;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4D4D4D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+#content{
+    margin-left: 20%;
+    padding-top: 10%;
+    transition: height 0.9s;
+    display:block;
+    overflow:auto;
+}
+.books{
+    float: left;
+    width: 24vh;
+    height: 30vh;
+    text-align: center;
+    border: thin solid #000000;
+    margin: 2vh;
+    object-fit: fill;
+    cursor: pointer;
+}
+.books img{
+    height:20vh;
+    width: 24vh;
+    object-fit: contain;
+}
+
+.resize{
+    border-radius: 0vh;
+    background-color: rgba(75,75,75,0.99);
+    color: white;
+    height: 8vh;
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+
+
+}
+.resize p{
+    vertical-align: middle;
+    line-height: normal;
+}
+
+
+.books:hover{
+    background-color: #323232;
+}
+
+
+.gridcat{
+    background-color: white;
+}
+#content h5{
+
+}
