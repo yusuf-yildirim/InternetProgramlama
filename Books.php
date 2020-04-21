@@ -126,12 +126,14 @@
                 if($categoryname == "BestSelling"){
                     $categoryname = "denemekategori";
                 }
-                echo '<div class="books" style="display: block"><h4 class="resize" style="color: white;padding: 0vh;margin: 0vh ;height: 3vh">'.$categoryname.'</h4>
-                      <img src=' . $bookimagepath . '>
+                echo '<a href="http://192.168.1.2:8081/InternetProgramlama/api/bookProcess/get_book.php?bookID='.$bookid.'" ><div class="books"  style="display: block"><h4 class="resize" style="color: white;padding: 0vh;margin: 0vh ;height: 3vh">'.$categoryname.'</h4>
+                      <img  src=' . $bookimagepath . '>
                       <div class="resize">
+                     
                       <p>'.$bookname.'<br>'.$bookauthor.'<br>'.$bookprice.'tl</p>
                       </div>
-                      </div>';
+                      </div>
+                      </a>';
             }
         }
     }
