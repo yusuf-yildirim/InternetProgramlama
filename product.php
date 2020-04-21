@@ -1,3 +1,34 @@
+<?php
+
+
+
+if(isset($_GET["bookID"])){
+    $curl = curl_init();
+    $bookID = $_GET["bookID"];
+
+
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => "http://localhost:8081/InternetProgramlama/api/bookProcess/get_book.php?bookID=$bookID" ,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => "GET",
+    ));
+    $response = curl_exec($curl);
+    curl_close($curl);
+    $data = json_decode( $response);
+
+    //echo $response;
+}
+
+
+?>
+
+
+
 <!doctype html>
 <html>
 <head>
@@ -105,8 +136,13 @@
     </div>
 </div>
 <div id="container">
-    <div id="bookimage1" style="position:absolute;left:64px;top:221px;width:489px;height:264px;z-index:4;">
-        <img src="images/1.png" id="Image1" alt="" style="border: solid white"></div>
+    <?php  foreach ($data->Photos as $var){
+        //echo $var;
+        echo "<div id=\"bookimage1\" style=\"position:absolute;left:64px;top:221px;width:489px;height:264px;z-index:4;\">  
+        <img src=\InternetProgramlama\\".$var." id=\"Image1\" alt=\"\" style=\"border: solid white\"> </div>";
+    }
+    ?>
+
     <div id="bookimage2"  style="position:absolute;left:64px;top:498px;width:136px;height:70px;z-index:5;">
         <img src="images/7.jpg" onclick="changeimage(this.id)" id="Image2" alt="" style="border: solid white"></div>
     <div id="bookimage3" style="position:absolute;left:221px;top:497px;width:167px;height:72px;z-index:6;">
@@ -116,14 +152,13 @@
 
 
 
-
     <div id="bookdesc" style="position:absolute;left:687px;top:307px;width:456px;height:179px;z-index:8;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</span>
+        <span style="color:#FFFFFF;font-family:Arial;font-size:16px;"><?php  echo $data->bookDetails; ?> </span>
     </div>
     <div id="bookauthor" style="position:absolute;left:687px;top:555px;width:253px;height:15px;z-index:9;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Ornek Yazar</span></div>
+        <span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><?php  echo $data->bookAuthor; ?> </span></div>
     <div id="bookname" style="position:absolute;left:687px;top:235px;width:250px;height:33px;z-index:10;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:29px;">Ornek Kitap</span></div>
+        <span style="color:#FFFFFF;font-family:Arial;font-size:29px;"> <?php  echo $data->bookName; ?>   </span></div>
     <div id="wb_Text4"
          style="position:absolute;left:23px;top:1011px;width:270px;height:36px;z-index:11;margin-bottom: 500vh">
         <span style="color:#FFFFFF;font-family:Arial;font-size:32px;">Yorumlar</span></div>

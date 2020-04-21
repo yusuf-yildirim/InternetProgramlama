@@ -15,9 +15,16 @@ if(isset($_GET["bookID"])){
     $book->loadBookInfos();
     $user_arr=array(
         "bookName" =>$book->getBookName(),
-        "bookDetails" => $book->getBookDetail()
+        "bookDetails" => $book->getBookDetail(),
+        "bookAuthor" => $book->getAuthorName(),
+        "bookPrice" => $book->getBookPrice(),
+        "bookCategory" => $book->getBookCategory(),
+        "bookDate" => $book->getBookDate(),
+        "Photos"   => $book->getBookImages()
 
     );
+
+
     print_r(json_encode($user_arr));
 
 }

@@ -2,7 +2,7 @@
 
 error_reporting( ~E_DEPRECATED & ~E_NOTICE );
 
-define('DBHOST', '5.26.231.170:3308');
+define('DBHOST', 'localhost:3308');
 define('DBUSER', 'root');
 define('DBPASS', '');
 define('DBNAME', 'onlinekitapevi_db');
