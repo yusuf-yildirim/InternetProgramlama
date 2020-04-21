@@ -126,7 +126,7 @@
                 if($categoryname == "BestSelling"){
                     $categoryname = "denemekategori";
                 }
-                echo '<div class="books" style="display: block"><h4 class="resize" style="color: white;padding: 0vh;margin: 0vh ;height: 3vh">'.$categoryname.'</h4>
+                echo '<div onClick = "reply_click(this.id)" class="books" id="'.$bookid.'" style="display: block"><h4 class="resize" style="color: white;padding: 0vh;margin: 0vh ;height: 3vh">'.$categoryname.'</h4>
                       <img src=' . $bookimagepath . '>
                       <div class="resize">
                       <p>'.$bookname.'<br>'.$bookauthor.'<br>'.$bookprice.'tl</p>
@@ -140,4 +140,7 @@
 
 </div>
 </body>
+
+<script src = "makePage.js"></script>
+
 </html>
