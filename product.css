@@ -1,5 +1,5 @@
 
-#wb_Image1
+#bookimage1
 {
     vertical-align: top;
 }
@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
 }
-#wb_Image2
+#bookimage2
 {
     vertical-align: top;
 }
@@ -27,7 +27,7 @@
     width: 100%;
     height: 100%;
 }
-#wb_Image3
+#bookimage3
 {
     vertical-align: top;
 }
@@ -41,7 +41,7 @@
     width: 100%;
     height: 100%;
 }
-#wb_Image4
+#bookimage4
 {
     vertical-align: top;
 }
@@ -55,7 +55,7 @@
     width: 100%;
     height: 100%;
 }
-#wb_Text2
+#bookdesc
 {
     background-color: transparent;
     background-image: none;
@@ -64,24 +64,11 @@
     margin: 0;
     text-align: left;
 }
-#wb_Text2 div
+#bookdesc div
 {
     text-align: left;
 }
-#wb_Text3
-{
-    background-color: transparent;
-    background-image: none;
-    border: 0px solid #000000;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-#wb_Text3 div
-{
-    text-align: left;
-}
-#wb_Text1
+#bookauthor
 {
     background-color: transparent;
     background-image: none;
@@ -90,7 +77,20 @@
     margin: 0;
     text-align: left;
 }
-#wb_Text1 div
+#bookauthor div
+{
+    text-align: left;
+}
+#bookname
+{
+    background-color: transparent;
+    background-image: none;
+    border: 0px solid #000000;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+#bookname div
 {
     text-align: left;
 }
@@ -168,11 +168,11 @@
 {
     text-align: left;
 }
-#wb_Image5
+#star1
 {
     vertical-align: top;
 }
-#Image5
+#star1img
 {
     border: 0px solid #000000;
     padding: 0;
@@ -182,11 +182,11 @@
     width: 100%;
     height: 100%;
 }
-#wb_Image6
+#star2
 {
     vertical-align: top;
 }
-#Image6
+#star2img
 {
     border: 0px solid #000000;
     padding: 0;
@@ -196,11 +196,11 @@
     width: 100%;
     height: 100%;
 }
-#wb_Image7
+#star3
 {
     vertical-align: top;
 }
-#Image7
+#star3img
 {
     border: 0px solid #000000;
     padding: 0;
@@ -210,11 +210,11 @@
     width: 100%;
     height: 100%;
 }
-#wb_Image8
+#star4
 {
     vertical-align: top;
 }
-#Image8
+#star4img
 {
     border: 0px solid #000000;
     padding: 0;
@@ -224,11 +224,11 @@
     width: 100%;
     height: 100%;
 }
-#wb_Image9
+#star5
 {
     vertical-align: top;
 }
-#Image9
+#star5img
 {
     border: 0px solid #000000;
     padding: 0;

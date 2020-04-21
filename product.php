@@ -14,24 +14,18 @@
     <script src="collapse.min.js"></script>
     <script src="dropdown.min.js"></script>
     <script>
-        $(document).ready(function()
-        {
-            $("a[href*='#header']").click(function(event)
-            {
+        $(document).ready(function () {
+            $("a[href*='#header']").click(function (event) {
                 event.preventDefault();
-                $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+                $('html, body').stop().animate({scrollTop: $('#wb_header').offset().top}, 600, 'easeOutCirc');
             });
-            $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
-            {
-                if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle'))
-                {
+            $(document).on('click', '.ThemeableMenu1-navbar-collapse.in', function (e) {
+                if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) {
                     $(this).collapse('hide');
                 }
             });
-            $(document).on('click','.ThemeableMenu2-navbar-collapse.in',function(e)
-            {
-                if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle'))
-                {
+            $(document).on('click', '.ThemeableMenu2-navbar-collapse.in', function (e) {
+                if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) {
                     $(this).collapse('hide');
                 }
             });
@@ -40,40 +34,6 @@
     <!-- Insert Google Analytics code here -->
 </head>
 <body>
-<div id="container">
-    <div id="wb_Image1" style="position:absolute;left:64px;top:221px;width:489px;height:264px;z-index:4;">
-        <img src="images/1.png" id="Image1" alt=""></div>
-    <div id="wb_Image2" style="position:absolute;left:64px;top:498px;width:136px;height:70px;z-index:5;">
-        <img src="images/7.jpg" id="Image2" alt="DCIM\100MEDIA\DJI_0046.JPG" title="DCIM\100MEDIA\DJI_0046.JPG"></div>
-    <div id="wb_Image3" style="position:absolute;left:216px;top:497px;width:167px;height:72px;z-index:6;">
-        <img src="images/4.jpg" id="Image3" alt=""></div>
-    <div id="wb_Image4" style="position:absolute;left:408px;top:496px;width:145px;height:74px;z-index:7;">
-        <img src="images/6.jpg" id="Image4" alt=""></div>
-    <div id="wb_Text2" style="position:absolute;left:687px;top:307px;width:456px;height:179px;z-index:8;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</span></div>
-    <div id="wb_Text3" style="position:absolute;left:687px;top:555px;width:253px;height:15px;z-index:9;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Ornek Yazar</span></div>
-    <div id="wb_Text1" style="position:absolute;left:687px;top:235px;width:250px;height:33px;z-index:10;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:29px;">Ornek Kitap</span></div>
-    <div id="wb_Text4" style="position:absolute;left:23px;top:1011px;width:270px;height:36px;z-index:11;margin-bottom: 500vh">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:32px;">Yorumlar</span></div>
-    <textarea name="TextArea1" id="TextArea1" style="position:absolute;left:262px;top:822px;width:745px;height:90px;z-index:12;" rows="5" cols="91" spellcheck="false"></textarea>
-    <div id="wb_Text5" style="position:absolute;left:147px;top:863px;width:1061px;height:21px;z-index:13;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:19px;">Yorum yap</span></div>
-    <input type="submit" id="Button1" name="" value="Paylaş" style="position:absolute;left:894px;top:941px;width:123px;height:30px;z-index:14;">
-    <div id="wb_Text6" style="position:absolute;left:64px;top:654px;width:250px;height:27px;z-index:15;">
-        <span style="color:#FFFFFF;font-family:Arial;font-size:24px;">Oyla</span></div>
-    <div id="wb_Image5" style="position:absolute;left:130px;top:651px;width:33px;height:33px;z-index:16;">
-        <img src="images/1024px-Empty_Star.svg.png" id="Image5" alt=""></div>
-    <div id="wb_Image6" style="position:absolute;left:163px;top:651px;width:33px;height:33px;z-index:17;">
-        <img src="images/1024px-Empty_Star.svg.png" id="Image6" alt=""></div>
-    <div id="wb_Image7" style="position:absolute;left:196px;top:651px;width:33px;height:33px;z-index:18;">
-        <img src="images/1024px-Empty_Star.svg.png" id="Image7" alt=""></div>
-    <div id="wb_Image8" style="position:absolute;left:229px;top:651px;width:33px;height:33px;z-index:19;">
-        <img src="images/1024px-Empty_Star.svg.png" id="Image8" alt=""></div>
-    <div id="wb_Image9" style="position:absolute;left:260px;top:651px;width:33px;height:33px;z-index:20;">
-        <img src="images/1024px-Empty_Star.svg.png" id="Image9" alt=""></div>
-</div>
 <div id="headercontainer">
     <div id="header">
         <div class="row">
@@ -144,5 +104,104 @@
         </div>
     </div>
 </div>
+<div id="container">
+    <div id="bookimage1" style="position:absolute;left:64px;top:221px;width:489px;height:264px;z-index:4;">
+        <img src="images/1.png" id="Image1" alt="" style="border: solid white"></div>
+    <div id="bookimage2"  style="position:absolute;left:64px;top:498px;width:136px;height:70px;z-index:5;">
+        <img src="images/7.jpg" onclick="changeimage(this.id)" id="Image2" alt="" style="border: solid white"></div>
+    <div id="bookimage3" style="position:absolute;left:221px;top:497px;width:167px;height:72px;z-index:6;">
+        <img src="images/4.jpg" onclick="changeimage(this.id)" id="Image3" alt="" style="border: solid white"></div>
+    <div id="bookimage4" style="position:absolute;left:408px;top:496px;width:145px;height:74px;z-index:7;">
+        <img src="images/6.jpg" onclick="changeimage(this.id)" id="Image4" alt="" style="border: solid white"></div>
+
+
+
+
+    <div id="bookdesc" style="position:absolute;left:687px;top:307px;width:456px;height:179px;z-index:8;">
+        <span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</span>
+    </div>
+    <div id="bookauthor" style="position:absolute;left:687px;top:555px;width:253px;height:15px;z-index:9;">
+        <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Ornek Yazar</span></div>
+    <div id="bookname" style="position:absolute;left:687px;top:235px;width:250px;height:33px;z-index:10;">
+        <span style="color:#FFFFFF;font-family:Arial;font-size:29px;">Ornek Kitap</span></div>
+    <div id="wb_Text4"
+         style="position:absolute;left:23px;top:1011px;width:270px;height:36px;z-index:11;margin-bottom: 500vh">
+        <span style="color:#FFFFFF;font-family:Arial;font-size:32px;">Yorumlar</span></div>
+    <textarea name="TextArea1" id="TextArea1"
+              style="position:absolute;left:262px;top:822px;width:745px;height:90px;z-index:12;" rows="5" cols="91"
+              spellcheck="false"></textarea>
+    <div id="wb_Text5" style="position:absolute;left:147px;top:863px;width:1061px;height:21px;z-index:13;">
+        <span style="color:#FFFFFF;font-family:Arial;font-size:19px;">Yorum yap</span></div>
+    <input type="submit" id="Button1" name="" value="Paylaş"
+           style="position:absolute;left:894px;top:941px;width:123px;height:30px;z-index:14;">
+    <div id="wb_Text6" style="position:absolute;left:64px;top:654px;width:250px;height:27px;z-index:15;">
+        <span style="color:#FFFFFF;font-family:Arial;font-size:24px;">Oyla</span></div>
+    <div id="star1" onclick="star(this.id)"
+         style="position:absolute;left:130px;top:651px;width:33px;height:33px;z-index:16;">
+        <img src="images/1024px-Empty_Star.svg.png" id="star1img" alt=""></div>
+    <div id="star2" onclick="star(this.id)"
+         style="position:absolute;left:163px;top:651px;width:33px;height:33px;z-index:17;">
+        <img src="images/1024px-Empty_Star.svg.png" id="star2img" alt=""></div>
+    <div id="star3" onclick="star(this.id)"
+         style="position:absolute;left:196px;top:651px;width:33px;height:33px;z-index:18;">
+        <img src="images/1024px-Empty_Star.svg.png" id="star3img" alt=""></div>
+    <div id="star4" onclick="star(this.id)"
+         style="position:absolute;left:229px;top:651px;width:33px;height:33px;z-index:19;">
+        <img src="images/1024px-Empty_Star.svg.png" id="star4img" alt=""></div>
+    <div id="star5" onclick="star(this.id)"
+         style="position:absolute;left:260px;top:651px;width:33px;height:33px;z-index:20;">
+        <img src="images/1024px-Empty_Star.svg.png" id="star5img" alt=""></div>
+</div>
+
 </body>
+
+
+<script>
+    function star(x) {
+        if (x == "star1") {
+            document.getElementById("star1img").src = "images/fullstar.svg.png";
+            document.getElementById("star2img").src = "images/1024px-Empty_Star.svg.png";
+            document.getElementById("star3img").src = "images/1024px-Empty_Star.svg.png";
+            document.getElementById("star4img").src = "images/1024px-Empty_Star.svg.png";
+            document.getElementById("star5img").src = "images/1024px-Empty_Star.svg.png";
+        } else if (x == "star2") {
+            document.getElementById("star1img").src = "images/fullstar.svg.png";
+            document.getElementById("star2img").src = "images/fullstar.svg.png";
+            document.getElementById("star3img").src = "images/1024px-Empty_Star.svg.png";
+            document.getElementById("star4img").src = "images/1024px-Empty_Star.svg.png";
+            document.getElementById("star5img").src = "images/1024px-Empty_Star.svg.png";
+        } else if (x == "star3") {
+            document.getElementById("star1img").src = "images/fullstar.svg.png";
+            document.getElementById("star2img").src = "images/fullstar.svg.png";
+            document.getElementById("star3img").src = "images/fullstar.svg.png";
+            document.getElementById("star4img").src = "images/1024px-Empty_Star.svg.png";
+            document.getElementById("star5img").src = "images/1024px-Empty_Star.svg.png";
+        } else if (x == "star4") {
+            document.getElementById("star1img").src = "images/fullstar.svg.png";
+            document.getElementById("star2img").src = "images/fullstar.svg.png";
+            document.getElementById("star3img").src = "images/fullstar.svg.png";
+            document.getElementById("star4img").src = "images/fullstar.svg.png";
+            document.getElementById("star5img").src = "images/1024px-Empty_Star.svg.png";
+        } else if (x == "star5") {
+            document.getElementById("star1img").src = "images/fullstar.svg.png";
+            document.getElementById("star2img").src = "images/fullstar.svg.png";
+            document.getElementById("star3img").src = "images/fullstar.svg.png";
+            document.getElementById("star4img").src = "images/fullstar.svg.png";
+            document.getElementById("star5img").src = "images/fullstar.svg.png";
+
+        }
+    }
+
+    var oldsrc = null;
+    function changeimage(x) {
+            document.getElementById("Image1").src = document.getElementById(x).src;
+            document.getElementById(x).style.border = "solid yellow";
+            if(oldsrc != null){
+                oldsrc.style.border = "solid white";
+            }
+            oldsrc = document.getElementById(x);
+    }
+
+
+</script>
 </html>

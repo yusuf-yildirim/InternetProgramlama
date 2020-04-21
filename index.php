@@ -61,7 +61,7 @@
 </head>
 <body>
 <div id="container">
-    <div id="SlideShow1" style="position:absolute;left:6px;top:116px;width:1194px;height:588px;z-index:5;">
+    <div id="SlideShow1" style="position:absolute;left:0px;top:10vh;width:100%;height:60vh;z-index:5;">
         <img class="image" src="images/1.png" alt="" title="">
         <img class="image" src="images/2.jpg" style="display:none;" alt="" title="">
         <img class="image" src="images/3.png" style="display:none;" alt="" title="">
@@ -148,12 +148,12 @@
         </div>
     </div>
 </div>
-<div id="bestselling" style="position:absolute;left:320px;top:739px;width:65%;height:100px;z-index:6;">
-    <h1 id="Heading1">Çok Satanlar</h1>
+<div id="bestselling" style="position:absolute;left:16%;top:75vh;width:65%;height:auto;z-index:6;">
+    <h1 id="Heading1" style="margin-left:5% ">Çok Satanlar</h1>
     <div id="bestsellingcont">
         <?php
         include 'config.php';
-        $queryans = mysqli_query($conn, "SELECT * FROM Kitap WHERE KategoriID=1 order by KitapTarih desc ");
+        $queryans = mysqli_query($conn, "SELECT * FROM Kitap WHERE KategoriID=1 order by KitapTarih desc limit 4");
         if ($queryans->num_rows > 0) {
             while ($row = $queryans->fetch_assoc()) {
 
@@ -164,11 +164,7 @@
                     $bookprice = $row['UrunFiyati'];
                     $authorid = $row['YazarID'];
                     $bookauthor = mysqli_query($conn, "SELECT * FROM yazar WHERE YazarID = $authorid ")->fetch_assoc()['YazarAdi'];
-                    /*$file_extension = substr($src, strrpos($src, "."), strlen($src));
-                    $file_salt_name = substr($src, strrpos($src, "/") + 1, strpos($src, ".")); //!!!!!! Dikkat
-                    $file_salt_path = substr($src, 0, strrpos($src, "/") + 1);
-                    $dst = $file_salt_path . $row['ID'] . "-min" . $file_extension;*/
-                    echo '<div class="refresim" style="display: block">
+                    echo '<div class="books" style="display: block">
     <img src=' . $bookimagepath . '>
     <div class="resize">
         <p>' . $bookname . '<br>' . $bookauthor . '<br>' . $bookprice . 'tl</p>
@@ -179,8 +175,37 @@
         }
         ?>
     </div>
+</div>
 
 
+
+
+<div id="newest" style="position:absolute;left:16%;top:120vh;width:65%;height:auto;z-index:6;">
+    <h1 id="Heading2" style="margin-left:5% ">En Yeniler</h1>
+    <div id="newestcont">
+        <?php
+        include 'config.php';
+        $queryans = mysqli_query($conn, "SELECT * FROM Kitap order by KitapTarih desc limit 4");
+        if ($queryans->num_rows > 0) {
+            while ($row = $queryans->fetch_assoc()) {
+                if ($row['KitapID'] != "") {
+                    $bookid = $row['KitapID'];
+                    $bookimagepath = mysqli_query($conn, "SELECT * FROM kitapresim WHERE KitapID = $bookid ")->fetch_assoc()['Resim1'];
+                    $bookname = $row['KitapAdi'];
+                    $bookprice = $row['UrunFiyati'];
+                    $authorid = $row['YazarID'];
+                    $bookauthor = mysqli_query($conn, "SELECT * FROM yazar WHERE YazarID = $authorid ")->fetch_assoc()['YazarAdi'];
+                    echo '<div class="books" style="display: block">
+    <img src=' . $bookimagepath . '>
+    <div class="resize">
+        <p>' . $bookname . '<br>' . $bookauthor . '<br>' . $bookprice . 'tl</p>
+    </div>
+</div>';
+                }
+            }
+        }
+        ?>
+    </div>
 </div>
 </body>
 </html>
