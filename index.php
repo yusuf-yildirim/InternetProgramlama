@@ -5,8 +5,8 @@
     <title>Untitled Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <link href="css/card.css" rel="stylesheet">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -14,6 +14,7 @@
     <script src="js/collapse.min.js"></script>
     <script src="js/dropdown.min.js"></script>
     <script src="js/wb.slideshow.min.js"></script>
+    <?php include 'header.php';?>
     <script>
         $(document).ready(function () {
             $("a[href*='#header']").click(function (event) {
@@ -78,76 +79,7 @@
     </div>
 
 </div>
-<div id="headercontainer">
-    <div id="header">
-        <div class="row">
-            <div class="logo">
-                <div id="logoBreadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
-                    <ul id="Breadcrumb1">
-                        <li><a href="">KitapEvi</a></li>
-                    </ul>
 
-                </div>
-            </div>
-            <div class="mainnavmenu">
-                <div id="Menu" style="display:inline-block;width:100%;z-index:1001;">
-                    <div id="navMenu" class="navMenu" style="width:100%;height:auto !important;">
-                        <div class="container">
-                            <ul class="nav navbar-nav">
-                                <li class="">
-                                    <a href="">Anasayfa</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategoriler<b
-                                                class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <?php
-                                        include 'config.php';
-                                        $queryans = mysqli_query($conn, "SELECT * FROM kategori");
-                                        if ($queryans->num_rows > 0) {
-                                            while ($row = $queryans->fetch_assoc()) {
-                                                $categoryname = $row['KategoriAdi'];
-                                                if ($row['KategoriID'] != "" && $row['KategoriID'] != "1") {
-                                                    echo '<li><a href="./product.php">' . $categoryname . '</a></li>';
-                                                }
-                                            }
-                                        }
-                                        ?>
-                                    </ul>
-                                </li>
-                                <li class="">
-                                    <a href="./Books.php">Kitaplar</a>
-                                </li>
-                                <li class="">
-                                    <a href="./index.php#portfolio">Hakkında</a>
-                                </li>
-                                <li class="">
-                                    <a href="./index.php#about">İletişim</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="usermenu">
-                <div id="usermenucontainer" style="display:inline-block;width:100%;text-align:center;z-index:1002;">
-                    <div id="usermenucontent" class="usermenucontent" style="width:100%;height:auto !important;">
-                        <div class="container">
-                            <ul class="nav navbar-nav">
-                                <li class="">
-                                    <a href=""><i class="fa fa-shopping-basket"></i> </a>
-                                </li>
-                                <li class="">
-                                    <a href=""><i class="fa fa-sign-in"></i> </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div id="bestselling" style="position:absolute;left:16%;top:75vh;width:65%;height:auto;z-index:6;">
     <h1 id="Heading1" style="margin-left:5% ">Çok Satanlar</h1>
     <div id="bestsellingcont">
