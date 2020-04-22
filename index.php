@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <title>Untitled Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="font-awesome.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <link href="header.css" rel="stylesheet">
-    <link href="card.css" rel="stylesheet">
-    <script src="jquery-1.12.4.min.js"></script>
-    <script src="jquery-ui.min.js"></script>
-    <script src="transition.min.js"></script>
-    <script src="collapse.min.js"></script>
-    <script src="dropdown.min.js"></script>
-    <script src="wb.slideshow.min.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/transition.min.js"></script>
+    <script src="js/collapse.min.js"></script>
+    <script src="js/dropdown.min.js"></script>
+    <script src="js/wb.slideshow.min.js"></script>
     <script>
         $(document).ready(function () {
             $("a[href*='#header']").click(function (event) {
