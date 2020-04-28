@@ -2,6 +2,7 @@
 #bookimage1
 {
     vertical-align: top;
+    position:absolute;left:64px;top:221px;width:489px;height:264px;z-index:4;
 }
 #Image1
 {
@@ -16,6 +17,7 @@
 #bookimage2
 {
     vertical-align: top;
+    position:absolute;left:64px;top:498px;width:136px;height:70px;z-index:5;
 }
 #Image2
 {
@@ -30,6 +32,7 @@
 #bookimage3
 {
     vertical-align: top;
+    position:absolute;left:221px;top:497px;width:167px;height:72px;z-index:6;
 }
 #Image3
 {
@@ -44,6 +47,7 @@
 #bookimage4
 {
     vertical-align: top;
+    position:absolute;left:408px;top:496px;width:145px;height:74px;z-index:7;
 }
 #Image4
 {
