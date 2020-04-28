@@ -66,7 +66,7 @@ if (isset($_GET["bookID"])) {
 <body>
 <div id="container">
     <?php $counter = 1;
-
+if(isset($data->Photos)){
     foreach ($data->Photos as $var) {
         //echo $var;
 
@@ -76,6 +76,8 @@ if (isset($_GET["bookID"])) {
 
         $counter++;
     }
+}
+
     ?>
 
     <div id="bookdesc" style="position:absolute;left:687px;top:307px;width:456px;height:179px;z-index:8;">

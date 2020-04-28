@@ -22,6 +22,7 @@
 <div class="maincontent">
     <div class="accountmenu">
         <img class="accout-avatar" src="images/avatar.png" alt="" title="">
+        <h2>İSİM</h2>
         <a href="#">Profil Bilgileri</a>
         <a href="#"  class="active">Siparişler</a>
         <a href="#">Bilgileri Güncelle</a>
@@ -29,7 +30,17 @@
         <a href="#">Çıkış Yap</a>
     </div>
     <div>
+
+
+
+
+        <h1 class="inline-title"> ♪ SİPARİŞLER ♪ </h1>
+
        <ul>
+
+
+
+
            <div class="order-preview">
                <div class="order-head">
                    <div class="cell split">
@@ -100,10 +111,14 @@
                    </tbody>
                </table>
            </div>
+           <div class="wrapper">
+               <div class="divider div-transparent div-dot"></div>
+           </div>
 
        </ul>
     </div>
 </div>
+
 
 
 
