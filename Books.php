@@ -57,7 +57,7 @@
                 if($categoryname == "BestSelling"){
                     $categoryname = "denemekategori";
                 }
-                echo '<a href="http://192.168.1.2:8081/InternetProgramlama/product.php?bookID='.$bookid.'" ><div class="books"  style="display: block"><h4 class="resize" style="color: white;padding: 0vh;margin: 0vh ;height: 3vh">'.$categoryname.'</h4>
+                echo '<a href="product.php?bookID='.$bookid.'" ><div class="books"  style="display: block"><h4 class="resize" style="color: white;padding: 0vh;margin: 0vh ;height: 3vh">'.$categoryname.'</h4>
                       <img  src=' . $bookimagepath . '>
                       <div class="resize">
                      

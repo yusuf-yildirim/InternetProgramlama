@@ -2,9 +2,9 @@
 
 error_reporting( ~E_DEPRECATED & ~E_NOTICE );
 
-define('DBHOST', 'localhost:3308');
-define('DBUSER', 'root');
-define('DBPASS', '');
+define('DBHOST', 'localhost:3304');
+define('DBUSER', 'alka');
+define('DBPASS', 'Burakcan.1');
 define('DBNAME', 'onlinekitapevi_db');
 
 $conn = mysqli_connect(DBHOST,DBUSER,DBPASS);

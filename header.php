@@ -15,7 +15,7 @@
                         <div class="container">
                             <ul class="nav navbar-nav">
                                 <li class="">
-                                    <a href="">Anasayfa</a>
+                                    <a href="index.php">Anasayfa</a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategoriler<b

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Untitled Page</title>
+    <title>Ana Sayfa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
