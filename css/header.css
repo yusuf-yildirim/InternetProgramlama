@@ -1,4 +1,4 @@
-div#container {
+div#contentcontainer {
     width: 1200px;
     position: relative;
     margin: 0 auto 0 auto;
@@ -189,6 +189,73 @@ body {
     border-bottom-color: #2B2B2B;
 }
 
+
+
+
+
+
+.usermenucontent .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 16px;
+    background: #FFFFFF none;
+    border: 1px solid rgba(197, 197, 197, 1.00);
+    border-radius: 0px;
+    background-clip: padding-box;
+}
+
+.usermenucontent .dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #C5C5C5;
+}
+
+.usermenucontent .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px 3px 20px;
+    clear: both;
+    line-height: 1.428571429;
+    color: #2B2B2B;
+    white-space: nowrap;
+}
+
+.usermenucontent .open > .dropdown-menu {
+    display: block;
+}
+
+.usermenucontent .navbar-nav > .dropdown > a .caret {
+    border-top-color: #2B2B2B;
+    border-bottom-color: #2B2B2B;
+}
+
+
+.usermenucontent .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 4px solid #000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 0 dotted;
+}
+
+
+
+
+
+
+
 @media (min-width: 480px) {
 
     .navMenu .navbar-nav > .open > a,
@@ -218,6 +285,7 @@ body {
 
 
 }
+
 
 
 .usermenucontent .nav {

@@ -2,10 +2,10 @@
 class Database{
 
     // specify your own database credentials
-    private $host = "localhost:3308";
+    private $host = "localhost:3304";
     private $db_name = "onlinekitapevi_db";
-    private $username = "root";
-    private $password = "";
+    private $username = "alka";
+    private $password = "Burakcan.1";
     public $conn;
 
     // get the database connection

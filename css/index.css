@@ -39,5 +39,9 @@
     overflow:auto;
 
 }
-
-
+div#container {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    text-align: left;
+}

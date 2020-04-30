@@ -74,6 +74,5 @@
 </div>
 </body>
 
-<script src = "makePage.js"></script>
 
 </html>

@@ -16,7 +16,7 @@
 
 .inline-title{
 text-align: center;
-    margin-top: 19%;
+    margin-top: 16%;
     height: 94px;
 }
 .accountmenu {
@@ -59,26 +59,33 @@ text-align: center;
 }
 
 .order-head{
-    background-color: #f7f7f7;
+    background-color: #d7d7d7;
     display: flex;
     padding: 10px;
     border: 1px solid;
+    max-width: 1000px;
 }
 .order-body{
     display: flex;
     border: 1px solid;
     min-width: 400px;
+    max-width: 1000px;
     max-height: 800px;
-    background-color: #ffffff;
+    background-color: #e7e7e7;
     border-collapse: collapse;
 
 }
 
+.label{
+    overflow-scrolling: auto;
+    overflow : scroll;
+    overflow-wrap: normal;
+    overflow-clip: 50vh;
+}
 .split{
    padding-right: 100px;
 
 }
-
 
 
 td.cell.visual{
