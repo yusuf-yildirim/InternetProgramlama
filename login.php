@@ -38,11 +38,12 @@
 <body>
 <div class="login-page">
     <div class="form">
-        <form class="register-form">
-            <input type="text" placeholder="İsim"/>
-            <input type="password" placeholder="Şifre"/>
-            <input type="text" placeholder="E-posta"/>
-            <button>create</button>
+        <form id="register-form" class="register-form">
+            <input type="text" name="firstname" placeholder="İsim"/>
+            <input type="text" name="lastname" placeholder="Soyisim"/>
+            <input type="email" name="email" placeholder="E-posta"/>
+            <input type="password" name="password" placeholder="Şifre"/>
+            <button type="submit">Oluştur</button>
             <p class="message">Zaten Kaydoldun mu? <a href="#">Giriş Yap</a></p>
         </form>
         <form id="login_form" class="login_form">
@@ -84,7 +85,28 @@
 
         return false;
     });
+    $(document).on('submit', '#register-form', function () {
 
+        var sign_up_form = $(this);
+        var form_data = JSON.stringify(sign_up_form.serializeObject());
+
+        $.ajax({
+            url: "./api/userProcess/create_user.php",
+            type: "POST",
+            contentType: 'application/json',
+            data: form_data,
+            success: function (result) {
+                setTimeout(() => {
+                    window.location.replace("./index.php");
+                }, 2);
+            },
+            error: function (xhr, resp, text) {
+                alert("kayıt olunamadı");
+            }
+        });
+
+        return false;
+    });
 
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
